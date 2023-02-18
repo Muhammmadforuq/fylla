@@ -10,8 +10,8 @@
     <title> Fylla || Home</title>
 </head>
 <body class="bg-brand-gray p-4 lg:p-5">
-    <div class="border border-black p-4 sm:p-6 lg:p-8 2xl:p-12">      
-        <header>
+    <div class="relative border border-black p-4 sm:p-6 lg:p-8 2xl:p-12">      
+        <header class="">
             <nav class="max-w-xxl flex items-center justify-between mx-auto pb-8 border-b border-black">
                 <!-- Logo -->
                 <a href="#">
@@ -60,26 +60,24 @@
                             </a>
                         </div>
                     </div>
-                    <!-- menu BTn -->
-                    <button class="lg:hidden">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                          </svg>        
+                    <!-- Menu Btn -->
+                    <button class="menuBtn lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="hamburger h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="x h-7 w-7 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
+                            </svg>
                     </button>
+
                 </div>
-                 <!-- Moblie menu -->
-                <div class="menu hidden">
-                    <div>
-                        <div class="hidden xl:flex items-center space-x-5 lg:space-x-8">
-                            <a href="#" class="border-b-2 border-transparent hover:border-black transition ease-linear pb-0.5">work</a>
-                            <a href="#" class="border-b-2 border-transparent hover:border-black transition ease-linear pb-0.5">Services</a>
-                            <a href="#" class="border-b-2 border-transparent hover:border-black transition ease-linear pb-0.5">Studio</a>
-                            <a href="#" class="border-b-2 border-transparent hover:border-black transition ease-linear pb-0.5">Blog</a>
-                            <a href="#" class="border-b-2 border-transparent hover:border-black transition ease-linear pb-0.5">shop</a>
-                            <button>Pages</button>
-                            <button href="#">cart (0)</button>
-                        </div>
-                    </div>
+                <!-- Mobile menu -->
+                <div class="menu absolute z-50 top-20 left-0 right-0 w-hull flex flex-col items-center justify-center bg-brand-gray transition ease-linear space-y-5 py-10 sm:py-20">
+                    <a href="#" class="border-b-2 border-transparent hover:border-black transition ease-linear pb-0.5">work</a>
+                    <a href="#" class="border-b-2 border-transparent hover:border-black transition ease-linear pb-0.5">Services</a>
+                    <a href="#" class="border-b-2 border-transparent hover:border-black transition ease-linear pb-0.5">Studio</a>
+                    <a href="#" class="border-b-2 border-transparent hover:border-black transition ease-linear pb-0.5">Blog</a>
+                    <a href="#" class="border-b-2 border-transparent hover:border-black transition ease-linear pb-0.5">shop</a>
                 </div>
             </nav>
         </header>
@@ -448,7 +446,7 @@
             </div>
         </footer>
     </div>
-
+<script src="./js/app.js"></script>
 </body>
 </html>
 
