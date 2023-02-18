@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Syne:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/font/stylesheet.css">
+    <title> Fylla || Home</title>
+</head>
+<body class="bg-brand-gray p-4 lg:p-5">
+    <div class="border border-black p-4 sm:p-6 lg:p-8 2xl:p-12">      
+        <header>
+            <nav class="max-w-xxl flex items-center justify-between mx-auto pb-8 border-b border-black">
+                <!-- Logo -->
+                <a href="#">
+                    <svg width="139" height="50" viewBox="0 0 139 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M41.8524 49.9999H0V8.11182H41.8524V49.9999ZM0.66846 49.3314H41.1839V8.78028H0.66846V49.3314Z" fill="#191919"/>
+                        <path d="M45.6361 45.7665H3.78583V3.87842H45.6361V45.7665ZM4.45219 45.098H44.9676V4.54688H4.45219V45.098Z" fill="#191919"/>
+                        <path d="M49.6425 41.8902H7.79224V0H49.6425V41.8902ZM8.4607 41.2217H48.9761V0.66846H8.4607V41.2217Z" fill="#191919"/>
+                        <path d="M13.4238 27.2786H22.6793V36.5361H13.4238V27.2786Z" fill="#191919"/>
+                        <path d="M77.9546 17.2119V19.2759H67.9466V24.1239H76.1306V26.1399H67.9466V32.7879H65.6426V17.2119H77.9546Z" fill="#191919"/>
+                        <path d="M93.318 17.2119L87.39 27.5799V32.7879H85.086V27.5799L79.158 17.2119H81.798L86.838 26.3079H85.734L90.678 17.2119H93.318Z" fill="#191919"/>
+                        <path d="M98.0638 17.2119V30.7239H107.232V32.7879H95.7598V17.2119H98.0638Z" fill="#191919"/>
+                        <path d="M112.618 17.2119V30.7239H121.786V32.7879H110.314V17.2119H112.618Z" fill="#191919"/>
+                        <path d="M126.813 28.9239V26.8599H135.165V28.9239H126.813ZM123.429 32.7879L129.789 17.2119H132.237L138.645 32.7879H136.149L130.581 18.7239H131.445L125.901 32.7879H123.429Z" fill="#191919"/>
+                    </svg>  
+                </a>          
+                <!-- desktop menu -->
+                <div class="font-roboto-mono flex items-center space-x-6 lg:space-x-8 text-brand-black uppercase leading-4 tracking-wide">
+                    <div class="hidden xl:flex items-center space-x-5 lg:space-x-8">
+                        <a href="#" class="border-b-2 border-transparent hover:border-black transition ease-linear pb-0.5">work</a>
+                        <a href="#" class="border-b-2 border-transparent hover:border-black transition ease-linear pb-0.5">Services</a>
+                        <a href="#" class="border-b-2 border-transparent hover:border-black transition ease-linear pb-0.5">Studio</a>
+                        <a href="#" class="border-b-2 border-transparent hover:border-black transition ease-linear pb-0.5">Blog</a>
+                        <a href="#" class="border-b-2 border-transparent hover:border-black transition ease-linear pb-0.5">shop</a>
+                        <button>Pages</button>
+                        <button href="#">Cart (0)</button>
+                    </div>
+                    <div class="hidden md:flex items-center space-x-5">
+                        <button class="border border-transparent lg:border-black text-white lg:hover:text-black bg-black lg:hover:bg-white transition ease-linear rounded-md px-4 py-2.5">
+                            Let’s talk
+                        </button>                        
+                        <div class="flex items-center gap-4 pl-5 border-l border-black">
+                            <a href="#" class="group w-9 h-9 flex justify-center items-center border border-black rounded-full lg:hover:bg-black transition ease-linear">
+                                <span class="group-hover:text-white">
+                                    ln
+                                </span>
+                            </a>
+                            <a href="#" class="group w-9 h-9 flex justify-center items-center border border-black rounded-full lg:hover:bg-black transition ease-linear">
+                                <span class="group-hover:text-white">
+                                    in
+                                </span>
+                            </a>
+                            <a href="#" class="group w-9 h-9 flex justify-center items-center border border-black rounded-full lg:hover:bg-black transition ease-linear">
+                                <span class="group-hover:text-white">
+                                    FB
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- menu BTn -->
+                    <button class="lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                          </svg>        
+                    </button>
+                </div>
+                 <!-- Moblie menu -->
+                <div class="menu hidden">
+                    <div>
+                        <div class="hidden xl:flex items-center space-x-5 lg:space-x-8">
+                            <a href="#" class="border-b-2 border-transparent hover:border-black transition ease-linear pb-0.5">work</a>
+                            <a href="#" class="border-b-2 border-transparent hover:border-black transition ease-linear pb-0.5">Services</a>
+                            <a href="#" class="border-b-2 border-transparent hover:border-black transition ease-linear pb-0.5">Studio</a>
+                            <a href="#" class="border-b-2 border-transparent hover:border-black transition ease-linear pb-0.5">Blog</a>
+                            <a href="#" class="border-b-2 border-transparent hover:border-black transition ease-linear pb-0.5">shop</a>
+                            <button>Pages</button>
+                            <button href="#">cart (0)</button>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main>  
+            <!-- Hero -->
+            <div class="max-w-xxl grid lg:grid-cols-2 mx-auto gap-8 py-7 lg:py-16 border-b border-black">
+                <div class="order-last lg:order-none flex flex-col xl:max-w-[600px] lg:pr-11">
+                    <p class="font-satoshi text-2xl lg:text-3xl 2xl:leading-relaxed pb-4">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                    </p>
+                    <svg  class="lg:mt-auto" width="62" height="80" viewBox="0 0 62 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M61.2799 40.1236C61.282 40.1174 61.282 40.1111 61.2799 40.1049C61.2903 40.0715 61.2945 40.0402 61.2966 40.0047C61.2945 39.9713 61.2903 39.94 61.2799 39.9066C61.282 39.9004 61.282 39.8941 61.2799 39.8878C61.2694 39.8565 61.2548 39.8273 61.2361 39.8002L30.9258 0.127284L30.9154 0.116851C30.9029 0.102244 30.8882 0.0876379 30.8736 0.077205C30.809 0.025039 30.738 0 30.6566 0C30.5753 0 30.5022 0.025039 30.4396 0.077205C30.425 0.0876379 30.4104 0.102244 30.3979 0.116851L30.3854 0.127284L0.0709451 39.7939C0.0500786 39.8211 0.0354724 39.8503 0.0250394 39.8816C0.0250394 39.8878 0.0250394 39.8941 0.0250394 39.9004C0.016693 39.9317 0.0104331 39.965 0.0104331 39.9984H0C0 40.0318 0.00625986 40.0652 0.0146063 40.0986C0.0146063 40.1049 0.0146063 40.1111 0.0146063 40.1174C0.0250393 40.1487 0.0396455 40.1779 0.060512 40.2029L30.3624 79.8696C30.3666 79.8738 30.3687 79.8779 30.3749 79.8821L30.4062 79.9155L30.4292 79.9343C30.4417 79.9447 30.4542 79.953 30.4688 79.9593L30.4918 79.9718L30.5419 79.9906H30.5627C30.6128 80.0031 30.6629 80.0031 30.7109 79.9906H30.7318L30.7818 79.9718L30.8048 79.9593C30.8194 79.953 30.8319 79.9447 30.8444 79.9343L30.8674 79.9155L30.9008 79.8821C30.9049 79.8779 30.9091 79.8738 30.9133 79.8696L61.2152 40.2029C61.2402 40.18 61.2632 40.1549 61.2799 40.1236ZM30.9947 31.6394H54.129L57.4614 35.9984H30.9947V31.6394ZM30.9947 30.9446V26.5856H50.2667L53.5969 30.9446H30.9947ZM30.9947 25.8908V21.5277H46.4044L49.7367 25.8887L30.9947 25.8908ZM30.9947 20.8328V16.476H42.5379L45.8723 20.8328H30.9947ZM30.9947 15.779V11.4201H38.6776L42.0078 15.7811L30.9947 15.779ZM30.9947 10.7231V6.36419H34.8132L38.1497 10.7252L30.9947 10.7231ZM30.9947 5.66726V1.36465L34.2832 5.66935L30.9947 5.66726ZM30.3019 39.6583H1.04748L30.3019 1.36465V39.6583ZM30.9947 40.3532H60.2574L30.9947 78.6468V40.3532ZM30.9947 39.6583V36.6932H57.9914L60.2574 39.6583H30.9947Z" fill="black"/>
+                    </svg>           
+                </div>
+                <div class="xl:h-[700px] order-first lg:order-none">
+                    <img class="w-full h-full object-cover" src="./assets/img/hero-men.png" alt="">
+                </div>
+            </div>
+            <!-- OUR CLIENTS -->
+            <div class="max-w-xxl mx-auto py-7 lg:py-16 border-b border-black">  
+                <div class="grid grid-cols-3 place-items-center xl:flex justify-between items-center gap-10 xl:gap-20 text-center">
+                    <div class="col-span-3 xl:inline-flex items-center space-x-10 2xl:space-x-20">
+                        <h3 class="font-roboto-mono uppercase">our clients</h3>
+                        <span class="inline-block w-px xl:h-20 bg-black"></span>
+                    </div>
+                    <img class="cursor-pointer lg:hover:scale-110 transition-transform ease-linear duration-200" src="./assets/img/client-2.svg" alt="client-2">
+                    <img class="cursor-pointer lg:hover:scale-110 transition-transform ease-linear duration-200" src="./assets/img/client-1.svg" alt="client-1">
+                    <img class="cursor-pointer lg:hover:scale-110 transition-transform ease-linear duration-200" src="./assets/img/client-3.svg" alt="client-3">
+                    <img class="cursor-pointer lg:hover:scale-110 transition-transform ease-linear duration-200" src="./assets/img/client-4.svg" alt="client-4">
+                    <img class="cursor-pointer lg:hover:scale-110 transition-transform ease-linear duration-200" src="./assets/img/client-5.svg" alt="client-5">
+                    <img class="cursor-pointer lg:hover:scale-110 transition-transform ease-linear duration-200" src="./assets/img/client-6.svg" alt="client-6">
+                </div>
+            </div>
+            <!-- WHAT WE DO -->
+            <div class="max-w-xxl mx-auto py-7 lg:py-16 border-b border-black">
+                <div class="grid grid-cols-2 xl:grid-cols-3 gap-7 2xl:gap-x-12">
+                    <h3 class="font-roboto-mono col-span-2 xl:col-span-1 text-center xl:text-start xl:border-r border-black">
+                        WHAT WE DO
+                    </h3>
+                    <div class="col-span-2">
+                    <div class="grid lg:grid-cols-2 gap-y-10 pb-8 2xl:pb-12 border-b border-black">
+                        <div class="flex flex-col sm:flex-row items-center  text-center sm:text-start gap-7 lg:border-r border-black md:pr-10">
+                            <img class="w-16 md:w-20" src="./assets/img/Vector.svg" alt="logo">
+                            <div>
+                                <h3 class="font-syne font-medium text-2xl md:text-3xl pb-2 uppercase">Branding</h3>
+                                <p class="font-satoshi text-l lg:text-xl xl:leading-8">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex flex-col sm:flex-row items-center  text-center sm:text-start gap-7 lg:px-12">
+                            <img class="w-16 md:w-20" src="./assets/img/Vector-1.svg" alt="logo">
+                            <div>
+                                <h3 class="font-syne font-medium text-2xl md:text-3xl pb-2 uppercase">Design</h3>
+                                <p class="font-satoshi text-l lg:text-xl xl:leading-8">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid lg:grid-cols-2 gap-y-10 pt-8 2xl:pt-12">
+                        <div class="flex flex-col sm:flex-row items-center gap-7 text-center sm:text-start lg:border-r border-black md:pr-10">
+                            <img class="w-16 md:w-20" src="./assets/img/Vector-2.svg" alt="logo">
+                            <div>
+                                <h3 class="font-syne font-medium text-2xl md:text-3xl pb-2 uppercase">Video</h3>
+                                <p class="font-satoshi text-l lg:text-xl xl:leading-8">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex flex-col sm:flex-row items-center gap-7 text-center sm:text-start lg:px-12">
+                            <img class="w-16 md:w-20" src="./assets/img/Vector-3.svg" alt="logo">
+                            <div>
+                                <h3 class="font-syne font-medium text-2xl md:text-3xl pb-2 uppercase">Content</h3>
+                                <p class="font-satoshi text-l lg:text-xl xl:leading-8">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div> 
+            <!-- Featured Work -->
+            <div class="max-w-xxl mx-auto py-7 lg:py-16 border-b border-black">
+                <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-7 2xl:gap-x-12">
+                    <div class="md:col-span-2 xl:col-span-1 text-center xl:text-start xl:border-r border-black xl:pr-12">
+                       <h2 class="font-syne font-medium text-3xl lg:text-6xl pb-2">Featured 
+                        <br class="hidden xl:inline-block">
+                        Work</h2>
+                       <p class="font-satoshi text-lg lg:text-2xl lg:leading-9 opacity-90 pb-6 lg:pb-12">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                        </p>
+                        <a href="#" class="inline-block border border-transparent lg:border-black text-white lg:hover:text-black bg-black lg:hover:bg-white transition ease-linear rounded-md px-4 py-2.5 uppercase">
+                            see all work 
+                        </a>
+                    </div>
+                    <div class="md:col-span-2 grid md:grid-cols-2 gap-y-8">
+                        <!-- Feature Box // big // Right -->
+                        <div class="md:row-span-2 md:col-span-2 pb-8 border-b border-black">
+                            <div class="2xl:h-[725px]">
+                                <img class="w-full h-full rounded-2xl" src="./assets/img/feature.png" alt="">
+                            </div>
+                            <div class="flex justify-between items-center pt-4">
+                                <h3 class="font-syne font-medium text-2xl">Featured Work</h3>
+                                <p class="font-roboto-mono">2022</p>
+                            </div>
+                        </div>
+                        <!-- feature box small 1-->
+                        <a href="#" class="group relative cursor-pointer md:pr-6">
+                            <div class="relative">
+                                <img class="w-full rounded-2xl" src="./assets/img/feature-2.png" alt="">
+                                <div class="font-roboto-mono absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 border border-transparent lg:border-black text-white lg:hover:text-black bg-black lg:hover:bg-white lg:opacity-0 lg:group-hover:opacity-100 transition ease-linear rounded-md px-4 py-2.5 uppercase">
+                                    View Project
+                                </div>
+                            </div>
+                            <div class="flex justify-between items-center pt-4">
+                                <h3 class="font-syne font-medium text-2xl">Enjoy Silence</h3>
+                                <p class="font-roboto-mono">2022</p>
+                            </div>
+                        </a>
+                        <!-- feature box small 2-->
+                        <a href="#" class="group relative cursor-pointer md:pl-6 md:border-l border-brand-black">
+                            <div class="relative">
+                                <img class="w-full rounded-2xl" src="./assets/img/feature-3.png" alt="">
+                                <div class="font-roboto-mono absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 border border-transparent lg:border-black text-white lg:hover:text-black bg-black lg:hover:bg-white lg:opacity-0 lg:group-hover:opacity-100 transition ease-linear rounded-md px-4 py-2.5 uppercase">
+                                    View Project
+                                </div>
+                            </div>
+                            <div class="flex justify-between items-center pt-4">
+                                <h3 class="font-syne font-medium text-2xl">Pure Vision</h3>
+                                <p class="font-roboto-mono">2022</p>
+                            </div>
+                        </a>
+                         <!-- feature box small 3-->
+                         <a href="#" class="group relative cursor-pointer md:pr-6">
+                            <div class="relative">
+                                <img class="w-full rounded-2xl" src="./assets/img/feature-4.png" alt="">
+                                <div class="font-roboto-mono absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 border border-transparent lg:border-black text-white lg:hover:text-black bg-black lg:hover:bg-white lg:opacity-0 lg:group-hover:opacity-100 transition ease-linear rounded-md px-4 py-2.5 uppercase">
+                                    View Project
+                                </div>
+                            </div>
+                            <div class="flex justify-between items-center pt-4">
+                                <h3 class="font-syne font-medium text-2xl">Boring Brand</h3>
+                                <p class="font-roboto-mono">2022</p>
+                            </div>
+                        </a>
+                          <!-- feature box small 4-->
+                          <a href="#" class="group relative cursor-pointer md:pl-6 md:border-l border-brand-black">
+                            <div class="relative">
+                                <img class="w-full rounded-2xl" src="./assets/img/feature-5.png" alt="">
+                                <div class="font-roboto-mono absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 border border-transparent lg:border-black text-white lg:hover:text-black bg-black lg:hover:bg-white lg:opacity-0 lg:group-hover:opacity-100 transition ease-linear rounded-md px-4 py-2.5 uppercase">
+                                    View Project
+                                </div>
+                            </div>
+                            <div class="flex justify-between items-center pt-4">
+                                <h3 class="font-syne font-medium text-2xl">New Culture</h3>
+                                <p class="font-roboto-mono">2022</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div> 
+            <!-- How we work -->
+            <div class="max-w-xxl mx-auto py-7 lg:py-16 border-b border-black">
+                <div class="lg:grid grid-cols-2 xl:grid-cols-3 gap-y-6 text-center lg:text-start">
+                    <div class="xl:col-span-2 xl:border-r border-black">
+                        <h3 class="font-roboto-mono text-center lg:text-start pb-4">
+                            WHAT WE DO
+                        </h3>
+                        <p class="font-syne font-medium text-4xl lg:text-5xl xl:text-6xl 2xl:text-80 2xl:leading-[88px] pb-10 xl:pb-28">
+                            We help our clients <br>
+                            succeed with innovative strategies.
+                        </p>
+
+                        <img class="mx-auto lg:mx-0" src="./assets/img/Vector-3.svg" alt="">
+                    </div>
+                    <div class="lg:flex lg:flex-col xl:pl-12">
+                        <p class="font-satoshi text-2xl xl:leading-10">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut porttitor leo a diam sollicitudin tempor id eu. Pellentesque habitant morbi tristique senectus et netus. Praesent elementum facilisis.
+                        </p>
+                        <a href="#" class="mt-6 lg:mt-auto lg:self-start inline-block border border-transparent lg:border-black text-white lg:hover:text-black bg-black lg:hover:bg-white transition ease-linear rounded-md px-4 py-2.5 uppercase">
+                            Our services
+                        </a>     
+                    </div>
+                </div>
+            </div>
+            <!-- Our Values -->
+            <div class="max-w-xxl mx-auto">
+                <h2 class="font-syne font-medium text-3xl lg:text-5xl xl:text-6xl 2xl:text-80 2xl:leading-[88px] text-center py-7 lg:py-12 border-b border-black uppercase">
+                    Our Values
+                </h2>
+                <div class="grid xl:grid-cols-2 gap-y-8 py-7 lg:py-16 border-b border-brand-black">
+                    <div class="xl:pr-12">
+                        <img class="w-full xl:h-[575px] rounded-2xl object-cover" src="./assets/img/value.png" alt="">
+                    </div>
+                    <!-- left -->
+                    <div class="xl:pl-12 xl:border-l border-black">
+                        <!-- box1 -->
+                        <div class="flex items-start space-x-7 lg:space-x-12 pb-8 2xl:pb-12">
+                            <div class="w-9 h-9 font-roboto-mono text-sm flex items-center justify-center flex-shrink-0 border border-black rounded-full">
+                                <span>01</span>
+                            </div>
+                            <div>
+                                <h2 class="font-syne font-medium text-3xl pb-2">Vision</h2>
+                                <p class="font-satoshi text-lg xl:leading-8">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Scelerisque in dictum non consectetur a erat nam at. Pretium aenean pharetra magna ac placerat.
+                                </p>
+                            </div>
+                        </div>
+                          <!-- box2 -->
+                        <div class="flex items-start space-x-7 lg:space-x-12 py-8 2xl:py-12 border-y border-black">
+                            <div class="w-9 h-9 font-roboto-mono text-sm flex items-center justify-center flex-shrink-0 border border-black rounded-full">
+                                <span>02</span>
+                            </div>
+                            <div>
+                                <h2 class="font-syne font-medium text-3xl pb-2">Innovation</h2>
+                                <p class="font-satoshi text-lg xl:leading-8">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Scelerisque in dictum non consectetur a erat nam at. Pretium aenean pharetra magna ac placerat.
+                                </p>
+                            </div>
+                        </div>
+                         <!-- box2 -->
+                         <div class="flex items-start space-x-7 lg:space-x-12 pt-8 2xl:pt-12">
+                            <div class="w-9 h-9 font-roboto-mono text-sm flex items-center justify-center flex-shrink-0 border border-black rounded-full">
+                                <span>03</span>
+                            </div>
+                            <div>
+                                <h2 class="font-syne font-medium text-3xl pb-2">Connection</h2>
+                                <p class="font-satoshi text-lg xl:leading-8">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Scelerisque in dictum non consectetur a erat nam at. Pretium aenean pharetra magna ac placerat.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+             <!-- Contact -->
+             <div class="max-w-xxl mx-auto py-7 lg:py-16 border-b border-black">
+                <div class="lg:grid grid-cols-2 xl:grid-cols-3 gap-6 text-center lg:text-start">
+                    <div class="xl:col-span-2 xl:border-r border-black">
+                        <h3 class="font-roboto-mono text-center lg:text-start pb-4">
+                            Contact
+                        </h3>
+                        <p class="font-syne font-medium text-3xl lg:text-5xl xl:text-6xl 2xl:text-80 2xl:leading-[88px] pb-10 xl:pb-28 uppercase">
+                           Let’s bring your <br> brand to the next <br> level
+                        </p>
+                        <img class="mx-auto lg:mx-0" src="./assets/img/Vector-1.svg" alt="">
+                    </div>
+                    <div class="lg:flex lg:flex-col xl:pl-12">
+                        <p class="font-satoshi text-2xl xl:leading-10">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..
+                        </p>
+                        <a href="#" class="mt-6 lg:mt-auto lg:self-start inline-block border border-transparent lg:border-black text-white lg:hover:text-black bg-black lg:hover:bg-white transition ease-linear rounded-md px-4 py-2.5 uppercase">
+                            get im touch
+                        </a>     
+                    </div>
+                </div>
+            </div>
+            <!-- Last news -->
+            <div class="max-w-xxl mx-auto">
+              <div class="lg:flex justify-between items-center border-b border-black py-7 lg:py-12 space-y-6 lg:space-y-0 text-center">
+                <h2 class="font-syne font-medium text-3xl lg:text-5xl xl:text-6xl 2xl:text-80 2xl:leading-[88px] uppercase">
+                    Latest News
+                </h2>
+                <a href="#" class="inline-block border border-black text-black lg:hover:text-white bg-white lg:hover:bg-black transition ease-linear rounded-md px-4 py-2.5 uppercase">
+                    see all
+                </a>
+              </div>
+              <div class="grid lg:grid-cols-2 xl:grid-cols-3 py-7 lg:py-16 gap-y-10">
+                    <div class="lg:pr-12 lg:border-r border-black">
+                        <img class="w-full h-64 lg:h-60 2xl:h-[300px] object-cover rounded-2xl" src="./assets/img/news-1.png" alt="">
+                        <p class="font-roboto-mono pt-4 pb-2">Branding, Design</p>
+                        <h3 class="font-syne font-medium text-3xl lg:text-3xl">
+                            Things to Look for When Comparing Branding Alternatives
+                        </h3>
+                    </div>
+                    <div class="lg:pl-12 xl:pr-12 xl:border-r border-black">
+                        <img class="w-full h-64 lg:h-60 2xl:h-[300px] object-cover rounded-2xl" src="./assets/img/news-2.png" alt="">
+                        <p class="font-roboto-mono pt-4 pb-2">Branding, Design</p>
+                        <h3 class="font-syne font-medium text-3xl lg:text-3xl">
+                            5 Stand-out Features of Branding You Should Know
+                        </h3>
+                    </div>
+                    <div class="xl:pl-12">
+                        <img class="w-full h-64 lg:h-60 2xl:h-[300px] object-cover rounded-2xl" src="./assets/img/news-3.png" alt="">
+                        <p class="font-roboto-mono pt-4 pb-2">Branding, Design</p>
+                        <h3 class="font-syne font-medium text-3xl lg:text-3xl">
+                            Branding: What Real Customers Have to Say
+                        </h3>
+                    </div>
+              </div>
+            </div>
+        </main>
+        <footer class="max-w-xxl mx-auto">
+            <div class="grid xl:grid-cols-3 py-8 lg:py-16 gap-y-8 border-y border-black">
+                <div class="order-last xl:order-none flex flex-col">
+                    <a class="pb-8" href="#">
+                        <svg width="139" height="50" viewBox="0 0 139 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M41.8524 49.9999H0V8.11182H41.8524V49.9999ZM0.66846 49.3314H41.1839V8.78028H0.66846V49.3314Z" fill="#191919"/>
+                            <path d="M45.6361 45.7665H3.78583V3.87842H45.6361V45.7665ZM4.45219 45.098H44.9676V4.54688H4.45219V45.098Z" fill="#191919"/>
+                            <path d="M49.6425 41.8902H7.79224V0H49.6425V41.8902ZM8.4607 41.2217H48.9761V0.66846H8.4607V41.2217Z" fill="#191919"/>
+                            <path d="M13.4238 27.2786H22.6793V36.5361H13.4238V27.2786Z" fill="#191919"/>
+                            <path d="M77.9546 17.2119V19.2759H67.9466V24.1239H76.1306V26.1399H67.9466V32.7879H65.6426V17.2119H77.9546Z" fill="#191919"/>
+                            <path d="M93.318 17.2119L87.39 27.5799V32.7879H85.086V27.5799L79.158 17.2119H81.798L86.838 26.3079H85.734L90.678 17.2119H93.318Z" fill="#191919"/>
+                            <path d="M98.0638 17.2119V30.7239H107.232V32.7879H95.7598V17.2119H98.0638Z" fill="#191919"/>
+                            <path d="M112.618 17.2119V30.7239H121.786V32.7879H110.314V17.2119H112.618Z" fill="#191919"/>
+                            <path d="M126.813 28.9239V26.8599H135.165V28.9239H126.813ZM123.429 32.7879L129.789 17.2119H132.237L138.645 32.7879H136.149L130.581 18.7239H131.445L125.901 32.7879H123.429Z" fill="#191919"/>
+                        </svg>  
+                    </a>
+                    <p class="font-satoshi text-lg text-brand-black/90 pb-5">Main Street. 1 22222 Berlin</p>
+                    <div class="flex items-center gap-4 mt-auto">
+                        <a href="#" class="group w-9 h-9 flex justify-center items-center border border-black rounded-full lg:hover:bg-black transition ease-linear">
+                            <span class="group-hover:text-white">
+                                ln
+                            </span>
+                        </a>
+                        <a href="#" class="group w-9 h-9 flex justify-center items-center border border-black rounded-full lg:hover:bg-black transition ease-linear">
+                            <span class="group-hover:text-white">
+                                in
+                            </span>
+                        </a>
+                        <a href="#" class="group w-9 h-9 flex justify-center items-center border border-black rounded-full lg:hover:bg-black transition ease-linear">
+                            <span class="group-hover:text-white">
+                                FB
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="order-first xl:order-none xl:col-span-2 sm:flex justify-between gap-x-12 space-y-6 sm:space-y-0 xl:pl-12 xl:border-l border-black">
+                   <div class="sm:w-1/3 font-roboto-mono space-y-8">
+                        <h3 class="font-syne font-medium text-2xl">Pages</h3>
+                        <a href="#" class="block underline decoration-transparent underline-offset-2 lg:hover:decoration-black transition ease-linear pb-0.5 uppercase">Home</a>
+                        <a href="#" class="block underline decoration-transparent underline-offset-2 lg:hover:decoration-black transition ease-linear pb-0.5 uppercase">studio</a>
+                        <a href="#" class="block underline decoration-transparent underline-offset-2 lg:hover:decoration-black transition ease-linear pb-0.5 uppercase">Contact</a>
+                        <a href="#" class="hidden xl:inline-block border border-transparent lg:border-black text-white lg:hover:text-black bg-black lg:hover:bg-white transition ease-linear rounded-md px-4 py-2.5 uppercase">
+                            get im touch
+                        </a>   
+                   </div>
+                   <div class="sm:w-1/3 font-roboto-mono space-y-8">
+                        <h3 class="font-syne font-medium text-2xl">CMS</h3>
+                        <a href="#" class="block underline decoration-transparent underline-offset-2 lg:hover:decoration-black transition ease-linear uppercase">Work</a>
+                        <a href="#" class="block underline decoration-transparent underline-offset-2 lg:hover:decoration-black transition ease-linear uppercase">Work Single</a>
+                        <a href="#" class="block underline decoration-transparent underline-offset-2 lg:hover:decoration-black transition ease-linear uppercase">Blog</a>
+                        <a href="#" class="block underline decoration-transparent underline-offset-2 lg:hover:decoration-black transition ease-linear uppercase">Blog Post</a>
+                        <a href="#" class="block underline decoration-transparent underline-offset-2 lg:hover:decoration-black transition ease-linear uppercase">Shop</a>
+                        <a href="#" class="block underline decoration-transparent underline-offset-2 lg:hover:decoration-black transition ease-linear uppercase">Shop Single</a>     
+                   </div>
+                   <div class="sm:w-1/3 font-roboto-mono space-y-8">
+                    <h3 class="font-syne font-medium text-2xl">Utility Pages</h3>
+                    <a href="#" class="block underline decoration-transparent underline-offset-2 lg:hover:decoration-black transition ease-linear uppercase">404 Error Page</a>
+                    <a href="#" class="block underline decoration-transparent underline-offset-2 lg:hover:decoration-black transition ease-linear uppercase">Password Protected</a>
+                    <a href="#" class="block underline decoration-transparent underline-offset-2 lg:hover:decoration-black transition ease-linear uppercase">Styleguide</a>
+                    <a href="#" class="block underline decoration-transparent underline-offset-2 lg:hover:decoration-black transition ease-linear uppercase">Licensing</a>
+                    <a href="#" class="block underline decoration-transparent underline-offset-2 lg:hover:decoration-black transition ease-linear uppercase">Changelog</a>   
+                    </div>
+                </div>
+            </div>
+            <div class="font-roboto-mono md:flex items-center justify-between pt-7 xl:pt-12 space-y-6 md:space-y-0">
+                <p>© 2022 AGENCY VAN. All Rights Reserved.</p>
+                <div class="inline-block uppercase space-x-8">
+                    <a href="#" class="underline underline-offset-2 decoration-transparent lg:hover:decoration-black transition ease-linear">Privacy</a>
+                    <a href="#" class="underline underline-offset-2 decoration-transparent lg:hover:decoration-black transition ease-linear">Imprint</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+</body>
+</html>
+
