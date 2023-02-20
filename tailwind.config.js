@@ -11,9 +11,6 @@ module.exports = {
       fontSize:{
         80:"5rem"
       },
-      maxWidth:{
-        xxl:"111.5rem"
-      },
 
       colors:{
         brand:{
